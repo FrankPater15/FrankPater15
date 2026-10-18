@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="Cómo funciona Astrum: llega la solicitud, la IA lee los documentos, el robot hace el trámite, una persona aprueba y se genera el reporte">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1a3d"/>
+      <stop offset="1" stop-color="#151036"/>
+    </linearGradient>
+    <style>
+      .t { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+      .paso { animation: aparecer .8s cubic-bezier(.2,.8,.2,1) both; }
+      .p2 { animation-delay: .25s } .p3 { animation-delay: .5s } .p4 { animation-delay: .75s } .p5 { animation-delay: 1s }
+      @keyframes aparecer { from { opacity: 0 } to { opacity: 1 } }
+      .flujo { stroke-dasharray: 6 8; animation: avanzar 1.2s linear infinite; }
+      @keyframes avanzar { to { stroke-dashoffset: -28 } }
+      .pulso { animation: latir 2.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .p2 .pulso { animation-delay: .5s } .p3 .pulso { animation-delay: 1s } .p4 .pulso { animation-delay: 1.5s } .p5 .pulso { animation-delay: 2s }
+      @keyframes latir { 0%,100% { transform: scale(1); opacity: .25 } 50% { transform: scale(1.18); opacity: .55 } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="250" rx="18" fill="url(#fondo)" stroke="#2f8ff0" stroke-opacity=".35"/>
+  <text x="40" y="44" class="t" font-size="18" font-weight="700" fill="#e6f1ff">Cómo funciona Astrum</text>
+
+  <!-- conexiones -->
+  <g stroke="#8fc2ff" stroke-opacity=".7" stroke-width="2" fill="none" stroke-linecap="round">
+    <path class="flujo" d="M196 135 H306"/>
+    <path class="flujo" d="M426 135 H536"/>
+    <path class="flujo" d="M656 135 H766"/>
+    <path class="flujo" d="M886 135 H996"/>
+  </g>
+
+  <g class="t" text-anchor="middle">
+    <!-- 1 -->
+    <g class="paso">
+      <circle cx="136" cy="135" r="46" fill="#2f8ff0" class="pulso"/>
+      <circle cx="136" cy="135" r="38" fill="#123a7a" stroke="#2f8ff0"/>
+      <g fill="none" stroke="#e6f1ff" stroke-width="2.4" stroke-linejoin="round">
+        <rect x="118" y="122" width="36" height="26" rx="3"/>
+        <path d="M118 124 l18 13 18 -13"/>
+      </g>
+      <text x="136" y="208" font-size="16" font-weight="700" fill="#e6f1ff">Llega la solicitud</text>
+      <text x="136" y="228" font-size="13" fill="#9fb8dc">por correo o formulario</text>
+    </g>
+    <!-- 2 -->
+    <g class="paso p2">
+      <circle cx="366" cy="135" r="46" fill="#b49bff" class="pulso"/>
+      <circle cx="366" cy="135" r="38" fill="#2a1d63" stroke="#b49bff"/>
+      <g fill="none" stroke="#e6f1ff" stroke-width="2.4" stroke-linejoin="round">
+        <path d="M353 116 h18 l9 9 v28 h-27z"/>
+        <path d="M359 132 h15 M359 139 h15 M359 146 h10"/>
+      </g>
+      <text x="366" y="208" font-size="16" font-weight="700" fill="#e6f1ff">La IA lee los documentos</text>
+      <text x="366" y="228" font-size="13" fill="#9fb8dc">OCR + modelos de visión</text>
+    </g>
+    <!-- 3 -->
+    <g class="paso p3">
+      <circle cx="596" cy="135" r="46" fill="#2fd0a0" class="pulso"/>
+      <circle cx="596" cy="135" r="38" fill="#0f4a3d" stroke="#2fd0a0"/>
+      <g fill="none" stroke="#e6f1ff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="578" y="124" width="36" height="26" rx="6"/>
+        <path d="M596 124 v-8 M591 113 h10"/>
+        <circle cx="588" cy="136" r="3"/><circle cx="604" cy="136" r="3"/>
+        <path d="M589 144 h14"/>
+      </g>
+      <text x="596" y="208" font-size="16" font-weight="700" fill="#e6f1ff">El robot hace el trámite</text>
+      <text x="596" y="228" font-size="13" fill="#9fb8dc">RPA con Playwright</text>
+    </g>
+    <!-- 4 -->
+    <g class="paso p4">
+      <circle cx="826" cy="135" r="46" fill="#ffb347" class="pulso"/>
+      <circle cx="826" cy="135" r="38" fill="#4d3410" stroke="#ffb347"/>
+      <g fill="none" stroke="#e6f1ff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+        <circle cx="826" cy="126" r="7"/>
+        <path d="M812 150 q14 -16 28 0"/>
+        <path d="M836 138 l5 5 9 -10" stroke="#ffd58a"/>
+      </g>
+      <text x="826" y="208" font-size="16" font-weight="700" fill="#e6f1ff">Una persona aprueba</text>
+      <text x="826" y="228" font-size="13" fill="#9fb8dc">en los pasos que importan</text>
+    </g>
+    <!-- 5 -->
+    <g class="paso p5">
+      <circle cx="1056" cy="135" r="46" fill="#2f8ff0" class="pulso"/>
+      <circle cx="1056" cy="135" r="38" fill="#123a7a" stroke="#2f8ff0"/>
+      <g fill="none" stroke="#e6f1ff" stroke-width="2.4" stroke-linecap="round">
+        <path d="M1040 152 h32"/>
+        <path d="M1044 150 v-10 M1052 150 v-18 M1060 150 v-13 M1068 150 v-24"/>
+      </g>
+      <text x="1056" y="208" font-size="16" font-weight="700" fill="#e6f1ff">Tableros y reportes</text>
+      <text x="1056" y="228" font-size="13" fill="#9fb8dc">que se envían solos</text>
+    </g>
+  </g>
+</svg>

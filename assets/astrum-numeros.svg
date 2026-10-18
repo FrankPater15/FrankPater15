@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-label="Astrum en números: 145 versiones, más de 1.000 pruebas automatizadas, 6 meses, 3 equipos">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1a3d"/>
+      <stop offset="1" stop-color="#151036"/>
+    </linearGradient>
+    <linearGradient id="cifra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#8fc2ff"/>
+    </linearGradient>
+    <style>
+      .t { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+      .tarjeta { animation: subir .9s cubic-bezier(.2,.8,.2,1) both; }
+      .d1 { animation-delay: .15s } .d2 { animation-delay: .3s } .d3 { animation-delay: .45s }
+      @keyframes subir { from { opacity: 0; transform: translateY(12px) } to { opacity: 1; transform: none } }
+      .barra { animation: llenar 1.6s cubic-bezier(.2,.8,.2,1) .6s both; transform-box: fill-box; transform-origin: left; }
+      @keyframes llenar { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g class="t">
+    <g class="tarjeta">
+      <rect x="0" y="0" width="285" height="170" rx="16" fill="url(#fondo)" stroke="#2f8ff0" stroke-opacity=".35"/>
+      <text x="28" y="82" font-size="56" font-weight="800" fill="url(#cifra)">145</text>
+      <text x="28" y="116" font-size="17" fill="#cfe4ff">versiones publicadas</text>
+      <rect x="28" y="138" width="229" height="4" rx="2" fill="#2f8ff0" fill-opacity=".2"/>
+      <rect x="28" y="138" width="229" height="4" rx="2" fill="#2f8ff0" class="barra"/>
+    </g>
+    <g transform="translate(305 0)"><g class="tarjeta d1">
+      <rect x="0" y="0" width="285" height="170" rx="16" fill="url(#fondo)" stroke="#2f8ff0" stroke-opacity=".35"/>
+      <text x="28" y="82" font-size="56" font-weight="800" fill="url(#cifra)">+1.000</text>
+      <text x="28" y="116" font-size="17" fill="#cfe4ff">pruebas automatizadas</text>
+      <rect x="28" y="138" width="229" height="4" rx="2" fill="#2fd0a0" fill-opacity=".2"/>
+      <rect x="28" y="138" width="229" height="4" rx="2" fill="#2fd0a0" class="barra"/>
+    </g></g>
+    <g transform="translate(610 0)"><g class="tarjeta d2">
+      <rect x="0" y="0" width="285" height="170" rx="16" fill="url(#fondo)" stroke="#2f8ff0" stroke-opacity=".35"/>
+      <text x="28" y="82" font-size="56" font-weight="800" fill="url(#cifra)">6</text>
+      <text x="28" y="116" font-size="17" fill="#cfe4ff">meses de práctica</text>
+      <rect x="28" y="138" width="229" height="4" rx="2" fill="#b49bff" fill-opacity=".2"/>
+      <rect x="28" y="138" width="229" height="4" rx="2" fill="#b49bff" class="barra"/>
+    </g></g>
+    <g transform="translate(915 0)"><g class="tarjeta d3">
+      <rect x="0" y="0" width="285" height="170" rx="16" fill="url(#fondo)" stroke="#2f8ff0" stroke-opacity=".35"/>
+      <text x="28" y="82" font-size="56" font-weight="800" fill="url(#cifra)">3</text>
+      <text x="28" y="116" font-size="17" fill="#cfe4ff">equipos lo usan a diario</text>
+      <rect x="28" y="138" width="229" height="4" rx="2" fill="#ffb347" fill-opacity=".2"/>
+      <rect x="28" y="138" width="229" height="4" rx="2" fill="#ffb347" class="barra"/>
+    </g></g>
+  </g>
+</svg>

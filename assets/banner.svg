@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Frank Oronó Paternina — Desarrollador full stack">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b1f"/>
+      <stop offset=".55" stop-color="#0c1a3d"/>
+      <stop offset="1" stop-color="#1b1140"/>
+    </linearGradient>
+    <radialGradient id="nebulosa" cx=".82" cy=".35" r=".55">
+      <stop offset="0" stop-color="#2f8ff0" stop-opacity=".45"/>
+      <stop offset=".5" stop-color="#6a3df0" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#6a3df0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nombre" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".6" stop-color="#cfe4ff"/>
+      <stop offset="1" stop-color="#8fc2ff"/>
+    </linearGradient>
+    <linearGradient id="estela" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="marco"><rect width="1200" height="320" rx="18"/></clipPath>
+    <style>
+      .t { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+      .e { fill: #fff; }
+      .titila { animation: titilar 3.2s ease-in-out infinite; }
+      .titila.b { animation-duration: 4.4s; animation-delay: 1.1s; }
+      .titila.c { animation-duration: 2.6s; animation-delay: .5s; }
+      @keyframes titilar { 0%,100% { opacity: .25 } 50% { opacity: 1 } }
+      .orbita { transform-origin: 960px 160px; animation: girar 18s linear infinite; }
+      .orbita.lenta { animation-duration: 30s; animation-direction: reverse; }
+      @keyframes girar { to { transform: rotate(360deg) } }
+      .fugaz { animation: cruzar 7s ease-out 2s infinite; opacity: 0; }
+      @keyframes cruzar {
+        0% { transform: translate(0,0); opacity: 0 }
+        3% { opacity: 1 }
+        12% { transform: translate(-360px,150px); opacity: 0 }
+        100% { transform: translate(-360px,150px); opacity: 0 }
+      }
+      .entra { animation: entrar 1.1s cubic-bezier(.2,.8,.2,1) both; }
+      .entra.d1 { animation-delay: .25s } .entra.d2 { animation-delay: .5s } .entra.d3 { animation-delay: .75s }
+      @keyframes entrar { from { opacity: 0; transform: translateY(14px) } to { opacity: 1; transform: none } }
+      .cursor { animation: parpadeo 1s steps(1) infinite; }
+      @keyframes parpadeo { 50% { opacity: 0 } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .fugaz { opacity: 0 } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#marco)">
+    <rect width="1200" height="320" fill="url(#cielo)"/>
+    <rect width="1200" height="320" fill="url(#nebulosa)"/>
+
+    <!-- estrellas -->
+    <g class="e">
+      <circle cx="60" cy="40" r="1.2" class="titila"/>
+      <circle cx="140" cy="270" r="1" class="titila b"/>
+      <circle cx="230" cy="30" r="1.4" class="titila c"/>
+      <circle cx="320" cy="290" r="1" class="titila"/>
+      <circle cx="410" cy="22" r="1.1" class="titila b"/>
+      <circle cx="520" cy="285" r="1.3" class="titila c"/>
+      <circle cx="610" cy="45" r="1" class="titila"/>
+      <circle cx="690" cy="300" r="1.2" class="titila b"/>
+      <circle cx="760" cy="25" r="1.5" class="titila c"/>
+      <circle cx="840" cy="290" r="1" class="titila"/>
+      <circle cx="1110" cy="40" r="1.3" class="titila b"/>
+      <circle cx="1160" cy="270" r="1.1" class="titila c"/>
+      <circle cx="1060" cy="295" r="1" class="titila"/>
+      <circle cx="35" cy="160" r="1" class="titila c"/>
+      <circle cx="640" cy="250" r=".9" class="titila b"/>
+      <circle cx="700" cy="120" r="1" class="titila"/>
+      <circle cx="1180" cy="150" r="1.2" class="titila c"/>
+    </g>
+    <!-- destellos -->
+    <g fill="#e6f1ff" class="titila b">
+      <path d="M720 70 l2 7 7 2 -7 2 -2 7 -2 -7 -7 -2 7 -2z"/>
+    </g>
+    <g fill="#e6f1ff" class="titila c">
+      <path d="M1130 220 l1.6 5.6 5.6 1.6 -5.6 1.6 -1.6 5.6 -1.6 -5.6 -5.6 -1.6 5.6 -1.6z"/>
+    </g>
+
+    <!-- estrella fugaz -->
+    <g class="fugaz">
+      <line x1="1050" y1="20" x2="1160" y2="-26" stroke="url(#estela)" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- sistema: planeta con órbitas -->
+    <ellipse cx="960" cy="160" rx="150" ry="150" fill="none" stroke="#8fc2ff" stroke-opacity=".12"/>
+    <ellipse cx="960" cy="160" rx="100" ry="100" fill="none" stroke="#8fc2ff" stroke-opacity=".18" stroke-dasharray="3 7"/>
+    <g class="orbita">
+      <circle cx="1110" cy="160" r="7" fill="#2f8ff0"/>
+      <circle cx="1110" cy="160" r="14" fill="#2f8ff0" opacity=".18"/>
+    </g>
+    <g class="orbita lenta">
+      <circle cx="960" cy="60" r="5" fill="#b49bff"/>
+    </g>
+    <circle cx="960" cy="160" r="46" fill="#123a7a"/>
+    <circle cx="960" cy="160" r="46" fill="url(#nebulosa)"/>
+    <path d="M930 140 q30 -18 62 2" stroke="#8fc2ff" stroke-opacity=".5" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M924 168 q36 16 72 -4" stroke="#8fc2ff" stroke-opacity=".35" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="960" y="170" text-anchor="middle" class="t" font-size="28" font-weight="700" fill="#e6f1ff">&lt;/&gt;</text>
+
+    <!-- texto -->
+    <g class="t">
+      <text x="72" y="96" font-size="20" fill="#8fc2ff" class="entra">Hola, soy</text>
+      <text x="70" y="160" font-size="58" font-weight="800" fill="url(#nombre)" class="entra d1" letter-spacing="-1">Frank Oronó Paternina</text>
+      <text x="72" y="206" font-size="24" fill="#cfe4ff" class="entra d2">Desarrollador full stack · Automatización · IA</text>
+      <g class="entra d3">
+        <rect x="72" y="234" width="370" height="38" rx="19" fill="#2f8ff0" fill-opacity=".16" stroke="#2f8ff0" stroke-opacity=".55"/>
+        <text x="94" y="259" font-size="16" fill="#cfe4ff" font-family="Consolas, 'Courier New', monospace">python · react · electron · rpa</text>
+        <rect x="416" y="244" width="2" height="18" fill="#8fc2ff" class="cursor"/>
+      </g>
+    </g>
+  </g>
+</svg>
