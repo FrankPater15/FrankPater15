@@ -107,7 +107,3 @@ Diseñé y desarrollé **Astrum**, la plataforma de escritorio con la que los eq
 ## 📫 Hablemos
 
 Si tienes un proceso que se hace a mano y debería hacerse solo, o buscas a alguien para tu equipo, escríbeme por [LinkedIn](https://www.linkedin.com/in/frank-paternina-836640264/).
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=FrankPater15&label=Visitas%20al%20perfil&color=2f8ff0&style=flat-square" alt="Visitas al perfil">
-</p>
